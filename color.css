@@ -1,0 +1,271 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: white;
+    color: orange;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  img{
+    width: 150px;
+    height: 25%;
+    display: flex;
+  }
+  .logo { 
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 20px;
+    height: 30px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display :inline-flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: space-between;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
+  .btn {
+    background-color: orange; 
+    color: white;          /* White text for contrast */
+    border: none;          /* Remove default border */
+   
+    text-decoration: none; /* Remove underline if it's a link */ 
+    font-size: 14rem;       /* Adjust font-size as desired */
+    cursor: pointer;       /* Indicate clickable element */
+  }
+ /* General Container Styles */
+ 
+  /* Main Row Styles */
+  .row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+  }
+  
+  .bg-secondary {
+    background-color: #222222; 
+  }
+  
+  .py-2 { 
+   margin-top: 20px;
+   margin-bottom: 20px;
+  }
+  
+  /* Content/Border Styling */
+  .d-inline-flex {
+    display: inline-flex;
+  }
+  
+  .align-items-center {
+    align-items: center; 
+  }
+  
+  .flex-column {
+    flex-direction: column;
+    margin-bottom: 0; /* Remove margin between flex-column sections */
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .pr-3, .px-3, .pl-3 {  
+    padding: 0 5px;  /* Reduced padding for spacing between content sections */
+  }
+  
+  .border-right {
+    border-right: 1px solid rgba(255,255,255,0.2); 
+  }
+  
+  /* Icon Styling */
+  .fa-solid fa-location-dot { 
+    color: #ff9900;     
+    font-size: 20px; 
+  }
+  
+  /* Specific Typography */
+  h6 {
+    color: white;       
+    margin-bottom: 5px;  
+    font-size: 14px;     
+  }
+  
+  .m-0 {
+    margin: 0;
+  }
+  
+  .flex-column p { /* Target <p> tags within section */
+    margin-bottom: 0;
+  }
+  
+  /* Social Media Link Styling */
+  .fab { 
+    color: white;
+    font-size: 18px; 
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .px-2 {
+    padding-left: 5px; 
+    padding-right: 5px;
+  }
+  
+  /* Call to Action Button */
+  .btn {
+    background-color: #ff9900; 
+    color: white;          
+    border: none;          
+    padding: 20px 30px ;   
+    text-decoration: none; 
+    font-size: 14px;       
+   
+    cursor: pointer;       
+  }
+  
+  /* Responsive Adjustment for Social Icons */
+  @media (max-width: 768px) { 
+    .col-lg-6 {  
+      text-align: center; 
+    }
+  }
+  
+
+  /** Hero Contains **/
+
+  .hero-contains{
+    background-image: url("IATA-News.jpg");
+    height : 500px;
+    background-size: cover;
+   
+  }
+  /* ... (Other Existing CSS) ... */
+
+.content-row {
+    display: flex; /* Makes the items within a row */
+    align-items: center; /* Vertically centers the content */
+  }
+  
+  .first-text, 
+  .first-two {
+    flex: 1; /* Allow divs to take up equal space */
+    margin: 0 10px;  /* Add some spacing between divs */
+  }
+  
+  .changing-text {
+    display: inline-block; 
+    opacity: 1; 
+    animation: changeText 4s infinite alternate; 
+    color: orange; /* Set the text color to orange */
+  }
+  
+  
+  @keyframes changeText {
+    0% { opacity: 1; }   /* Visible at the start  */
+    50% { opacity: 0; }  /* Hidden in the middle */
+    100% { opacity: 1; } /* Visible at the end */
+  }
+  
+
+  .first-text {
+    font-size: 25px;
+    color: #f14902;
+    font-weight: bolder;
+    display: flex;
+    margin-top: 30px;
+  }
+  .first-text p {
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+  .first-two {
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-left : 50px;
+   
+  }
+  .first-three{
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-left : 50px;
+    
+  }
+/* Overall Container */
+.container {
+    width: 75%; /* Adjust width as needed */
+    margin: 0 auto;  /* Center the container */
+    display: inline-flex;
+  }
+  
+  /* Row Styles (Flexbox) */
+  .row {
+    display: flex; /* Enable flexbox layout */
+    justify-content: flex-start;
+  }
+  
+  /* Image Container Styles */
+  .box-contains {
+    display: flex;
+   justify-content: baseline;
+    border: none; /* Remove border if not desired */
+    margin: 10 10px;  /* Add spacing between boxes */
+    
+    max-width: 40%;
+    padding-bottom: 200px;
+  }
+  
+  /* Individual Image Styling */
+  .first-box,
+  .second-box {
+    background-image: url("yellow.jpg"); /* Assuming image is in the same directory */
+    height: 300px;  /* Set the desired image height */
+    width: 400px;  /* Set the desired image width */
+    background-size: cover; /* Ensure image covers the container */
+    position: relative; /* Needed for text positioning */
+    margin-right: 50px;
+  }
+  
+ 
+  .third-box{
+    background-image: url("truck.png"); /* Assuming image is in the same directory */
+    height: 300px;  /* Set the desired image height */
+    width: 400px;  /* Set the desired image width */
+    background-size: cover; /* Ensure image covers the container */
+    position: relative; /* Needed for text positioning */
+    margin-bottom: 50px;
+    margin-left: 900px;
+  }
+  
+  .first-box, .second-box {
+    background-image: url("yellow.jpg");
+    background-color: #f0f0f0; /* A light background for visibility */
+    
+  }
+  
